@@ -524,6 +524,7 @@ header{
 	font-size:14px;
 	color:#796f7a;
 	margin-left:-20px;
+	right: 0px;
 }
 
 /*----------------------------------------------------
@@ -1388,6 +1389,10 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 
 @media screen and (max-width: 400px) {
+	.skillbar-title{
+font-size:10px;
+letter-spacing:0px;
+}
 	#loopedSlider, #newsSlider{
 		min-height: 650px;
 		height: 100%;

@@ -9,11 +9,11 @@ $(document).ready(function(){
 		},6000);
 	});
 	
-	$('.skillbar').each(function(){
-		$(this).find('.skill-bar-percent').animate({
-			left:$(this).attr('data-percent')
-		},6000);
-	});
+	// $('.skillbar').each(function(){
+	// 	$(this).find('.skill-bar-percent').animate({
+	// 		left:$(this).attr('data-percent')
+	// 	},6000);
+	// });
 	
 	$('.skillbar').each(function(){
 		$(this).find('.skill-bar-percent').text($(this).attr('data-percent'));
