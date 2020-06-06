@@ -1,0 +1,44 @@
+Installation :
+--------------
+Download Ruby from https://www.ruby-lang.org/en/downloads/
+Extract .tar.gz and paste it in your home
+cd ruby-2.7.1/
+./configure
+make
+sudo make install
+
+Test version and location :
+---------------------------
+ruby -v
+which ruby
+
+To get gems :
+-------------
+If you already have installed it 
+sudo gem update --system
+
+Else
+---
+Download from https://rubygems.org/pages/download
+Extract and go to folder
+ruby setup.rb
+Test version and location :
+gem -v
+
+To add gem path :
+-----------------
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+Install jekyll :
+----------------
+gem install jekyll bundler
+
+Open blog :
+--------------------
+cd online-cv-master/
+bundle install  
+bundle exec jekyll serve
+Browse to http://localhost:4000
