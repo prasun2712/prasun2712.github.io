@@ -173,12 +173,13 @@
   </h2>
 
   <div class="summary">
-    <p>I have been working at the Robotics R&amp;D lab, TCS for the past 5 years. 
+    <p>I have been working at the Robotics R&amp;D lab, TCS since 2015. 
 My areas of expertise include Robotic System Architecture design using different 
 robotics frameworks (ROS, NAOqi), System Integration and Cloud Robotics Framework. 
 Over these years, I have developed real life robotics applications and 
 successfully demonstrated many POCs. Recently, I have developed a flair for 
-machine learning, especially in the application of deep neural networks for computer vision.</p>
+machine learning, especially in the application of deep neural networks for computer vision.
+I have also completed Robotics Software Engineer Nanodegree Program from Udacity in 2020.</p>
 
   </div><!--//summary-->
     
@@ -661,8 +662,8 @@ Details mentioned in Projects section.</p>
         width: 100%;
       }
     }
-    /*--NEW--*/
-    
+
+    /*--NEW--*/    
     #myImg1 {
       border-radius: 5px;
       cursor: pointer;
@@ -771,6 +772,115 @@ Details mentioned in Projects section.</p>
       }
     }
 
+    /*--Nanodegree--*/    
+    #myImg2 {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #myImg2:hover {
+      opacity: 0.7;
+    }
+
+    /* The Modal (background) */
+    .modal2 {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.9);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content2 {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption2 {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content2,
+    #caption2 {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* The Close Button */
+    .close2 {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close2:hover,
+    .close2:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+      .modal-content2 {
+        width: 100%;
+      }
+    }
+
   </style>
 
 
@@ -825,13 +935,19 @@ Details mentioned in Projects section.</p>
           }
         </script>  
       </li>
+    
 
+
+    
 
     
     <br>
   </div><!--//item-->
   
   <div class="item">
+    
+
+
     
       <li>“Torchbearer of Innovation in TCS” for Autonomous Mobile Robot in TCS Innovista 2020
         <img id="myImg1" src=/assets/images/certificate.jpg alt=Certificate style="width:10%;max-width:30px">
@@ -866,9 +982,52 @@ Details mentioned in Projects section.</p>
           }
         </script>  
       </li>
+    
 
     
+    <br>
+  </div><!--//item-->
+  
+  <div class="item">
     
+
+
+    
+
+    
+      <li><a href="https://graduation.udacity.com/confirm/PDDJXCYC">Udacity - Robotics Software Engineer Nanodegree Program - 2020</a>
+        <img id="myImg2" src=/assets/images/nanodegree.jpg alt=Nanodegree style="width:10%;max-width:30px">
+
+        <!-- The Modal -->
+        <div id="myModal2" class="modal2">
+          <span class="close2">&times;</span>
+          <img class="modal-content2" id="img012">
+          <div id="caption2"></div>
+        </div>
+  
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModal2");
+  
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("myImg2");
+          var modalImg = document.getElementById("img012");
+          var captionText = document.getElementById("caption2");
+          img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+  
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close2")[0];
+  
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+            modal.style.display = "none";
+          }
+        </script>  
+      </li>    
     
     <br>
   </div><!--//item-->
