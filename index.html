@@ -331,13 +331,22 @@ Details mentioned in Projects section.</p>
     
     <span class="project-title">
       
-      Fleet Management System
+      Demonstration for Hannover Messe (April 17-21, 2023)
       
     </span>
 
     
 
-    - <span class="project-tagline"><p>The current project I am working on is the fleet management system for robots. Details to follow soon….</p>
+    - <span class="project-tagline"><p>The demo presented a Smart
+Manufacturing System concept that can learn new skills and perform new tasks. The use-case involved one
+component of smart manufacturing line, a pick-and-pack robot working based on orders generated from UI. If
+the source (product) and destination (package) are new and unknown for the robotic system, it adapts to the
+new skill of object detection by generating a large amount of synthetic data using Blender and training an AI
+model using Google’s Vertex AI. Once the skill is ready, the model and execution pipeline are tested virtually
+using Gazebo. Once e2e testing is done in simulation, it can be used by the real robot for execution, which
+fulfils the order based on the combination of products to be packed. The system can also integrate with Google
+MCE and MDE to send the data for system’s various stages of execution, store it in BigQuery and use Google’s
+looker dashboard to analyze the KPIs to improve the overall equipment effectiveness.</p>
 </span>
     
 
@@ -346,7 +355,30 @@ Details mentioned in Projects section.</p>
 
   </div>
   <!--//item-->
-  
+    <div class="item">
+    
+    <span class="project-title">
+      
+      Manufacturing Robots
+      
+    </span>
+
+    
+
+    - <span class="project-tagline"><p>Robotic integration for MARS use-case. This use-case involved integration of two robotics arms, a rover,
+and an IR sensor with PLC to control the conveyor for discrete manufacturing line of MARS. Based on the
+quality check done at different QC stations, the robotics arms were used to sort the packets either into scrap-
+box or move them further down the manufacturing line and finally on a rover to move it to the final drop
+location. All the robots, sensors, and PLC to control conveyor were integrated with the existing system using
+OPC-UA</p>
+   </span>
+    
+
+    
+    <hr style="height:2px;border-width:0;color:#42a8c0;background-color:#42a8c0" width="30%" >
+
+  </div>
+  <!--//item-->
   <div class="item">
     
     <div class="row">
